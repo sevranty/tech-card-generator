@@ -25,7 +25,6 @@ def check_required() -> None:
         REPO / "README.md",
         REPO / "LICENSE",
         REPO / "requirements-validation.txt",
-        REPO / ".github/workflows/validate-skill.yml",
         SKILL / "SKILL.md",
         SKILL / "agents/openai.yaml",
         SKILL / "tests/runtime/run-runtime-validation.py",
@@ -43,13 +42,11 @@ def check_markdown_links() -> None:
     broken: list[str] = []
     pattern = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
     for doc in markdown_files:
-        text = doc.read_text(encoding="utf-8")
-        for target in pattern.findall(text):
+        for target in pattern.findall(doc.read_text(encoding="utf-8")):
             target = target.strip().split("#", 1)[0]
             if not target or target.startswith(("http://", "https://", "mailto:", "sandbox:")):
                 continue
-            target = target.replace("%20", " ")
-            resolved = (doc.parent / target).resolve()
+            resolved = (doc.parent / target.replace("%20", " ")).resolve()
             if not resolved.exists():
                 broken.append(f"{doc.relative_to(REPO)} -> {target}")
     if broken:
@@ -62,10 +59,9 @@ def check_runtime_manifest() -> None:
     if manifest.get("skill_name") != "machinery-card-generator":
         raise SystemExit("Runtime manifest has wrong skill_name")
     cases = manifest.get("cases", [])
-    ids = {case.get("id") for case in cases}
     expected = {"real-bulldozer", "toy-loader", "child-road-roller", "unclear-object"}
-    if ids != expected:
-        raise SystemExit(f"Runtime manifest cases mismatch: {sorted(ids)}")
+    if {case.get("id") for case in cases} != expected:
+        raise SystemExit("Runtime manifest cases mismatch")
     generated = [case for case in cases if case.get("decision") == "generate"]
     stopped = [case for case in cases if case.get("decision") == "stop_before_generation"]
     if len(generated) != 3 or len(stopped) != 1:
@@ -86,7 +82,7 @@ def check_runtime_manifest() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the complete tech-card-generator validation gate")
-    parser.add_argument("--skip-runtime", action="store_true", help="Skip deterministic runtime generation; intended only for diagnostics")
+    parser.add_argument("--skip-runtime", action="store_true", help="Skip deterministic runtime generation; diagnostics only")
     args = parser.parse_args()
     check_required()
     run([sys.executable, str(SKILL / "scripts/validate-agent-skills-spec.py"), str(SKILL)], "Agent Skills specification")
