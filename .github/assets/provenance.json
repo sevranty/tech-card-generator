@@ -1,0 +1,27 @@
+{
+  "method": "original deterministic SVG composition and local PNG export",
+  "source": "project-image.svg",
+  "dimensions": {
+    "project-image.png": [1600, 800],
+    "social-preview.png": [1280, 640],
+    "social-preview-evidence.png": [1400, 940]
+  },
+  "files": {
+    "project-image.svg": {
+      "size": 6023,
+      "sha256": "f83e58815581b8f2265f2c8641a3712bd9dd452c95df760405ebb52cefe36774"
+    },
+    "project-image.png": {
+      "size": 37223,
+      "sha256": "2f2660a9d08ef2851f3bd520e2b787499b622d003470a0e240721deea7af8a98"
+    },
+    "social-preview.png": {
+      "size": 29703,
+      "sha256": "0464ead6355345c86e7bcc52ed9a829fa03e9b9e9ce9b907c62c51605e8ba496"
+    },
+    "social-preview-evidence.png": {
+      "size": 45573,
+      "sha256": "b0ad6328959b11a630ea47621d95565d10c8d05f2a999bd801887c8fc0d014cb"
+    }
+  }
+}
