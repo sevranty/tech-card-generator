@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+<rect width="1600" height="800" fill="#fff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#101010">
+  <text x="150" y="155" font-size="28" font-weight="700">machinery-card-generator</text>
+  <text x="150" y="270" font-size="78" font-weight="800">КАРТОЧКИ</text>
+  <text x="150" y="355" font-size="78" font-weight="800">О ТЕХНИКЕ</text>
+  <text x="150" y="425" font-size="30">Одна реальная машина.</text>
+  <text x="150" y="468" font-size="30">Полный анализ. Карточка 2×1.</text>
+  <g font-size="22" font-weight="700">
+    <rect x="150" y="530" width="180" height="52" rx="26" fill="#fff" stroke="#101010" stroke-width="2"/><text x="180" y="564">1 машина</text>
+    <rect x="350" y="530" width="180" height="52" rx="26" fill="#fff" stroke="#101010" stroke-width="2"/><text x="380" y="564">4 текста</text>
+    <rect x="150" y="600" width="180" height="52" rx="26" fill="#fff" stroke="#101010" stroke-width="2"/><text x="185" y="634">Ч/Б стиль</text>
+    <rect x="350" y="600" width="215" height="52" rx="26" fill="#fff" stroke="#101010" stroke-width="2"/><text x="380" y="634">Без брендов</text>
+  </g>
+  <text x="150" y="710" font-size="20" fill="#666">Анализ → точные тексты → генерация → проверка</text>
+</g>
+<g transform="translate(700 210)">
+  <rect x="0" y="0" width="760" height="380" rx="20" fill="#fff" stroke="#111" stroke-width="4"/>
+  <line x1="380" y1="0" x2="380" y2="380" stroke="#111" stroke-width="4"/>
+  <g stroke="#c5c5c5" fill="none" stroke-width="2">
+    <path d="M22 105 Q85 70 142 100 T250 96 T356 108"/><path d="M22 126 Q95 98 160 121 T270 118 T356 126"/><path d="M58 106 l0 -28 m-11 16 l11 -22 l13 22"/><path d="M325 108 l0 -25 m-10 14 l10 -19 l12 19"/>
+  </g>
+  <g stroke="#aaa" fill="none" stroke-width="2"><path d="M20 178 Q90 164 165 175 T356 170"/><path d="M20 202 Q110 189 190 198 T356 194"/></g>
+  <g stroke="#888" fill="none" stroke-width="3"><path d="M20 282 Q95 271 170 281 T356 276"/><path d="M20 306 Q100 295 182 304 T356 300"/></g>
+  <path d="M45 135 C90 95 255 90 342 155 C375 182 376 267 332 302 C270 343 96 337 49 296 C14 266 14 175 45 135 Z" fill="#fff"/>
+  <g transform="translate(18 10) scale(.78)" stroke="#111" fill="#fff" stroke-linejoin="round">
+    <path d="M68 326 C68 286 99 261 150 258 L256 258 C305 260 330 287 330 326 C330 367 303 392 255 394 L150 394 C100 392 68 367 68 326 Z" stroke-width="8"/>
+    <path d="M88 326 C88 301 108 284 146 281 L258 281 C290 284 310 302 310 326 C310 351 291 369 256 371 L147 371 C109 369 88 351 88 326 Z" stroke-width="5"/>
+    <circle cx="132" cy="326" r="25" stroke-width="5"/><circle cx="202" cy="326" r="27" stroke-width="5"/><circle cx="272" cy="326" r="23" stroke-width="5"/>
+    <path d="M122 258 L143 205 L250 205 L276 260 Z" stroke-width="7"/><path d="M248 214 L303 226 L316 261 L276 258 Z" stroke-width="7"/><path d="M140 208 L160 145 L244 145 L258 205 Z" stroke-width="7"/><path d="M165 145 L176 88 L235 88 L244 145 Z" stroke-width="7"/>
+    <rect x="181" y="98" width="22" height="37" stroke-width="4"/><rect x="210" y="98" width="20" height="37" stroke-width="4"/>
+    <path d="M288 243 L342 264 L340 281 L282 261 Z" stroke-width="6"/><path d="M288 287 L342 298 L340 315 L282 306 Z" stroke-width="6"/>
+    <path d="M326 237 Q368 222 411 246 L402 360 Q361 388 317 365 L306 250 Q314 241 326 237 Z" stroke-width="8"/>
+    <path d="M313 309 Q360 337 406 312" stroke-width="4"/><path d="M316 347 Q360 374 403 349" stroke-width="4"/><line x1="350" y1="231" x2="344" y2="374" stroke-width="3"/><line x1="382" y1="232" x2="384" y2="369" stroke-width="3"/>
+  </g>
+  <path d="M284 294 Q316 267 355 282 Q373 291 358 310 Q326 323 286 309 Q275 302 284 294 Z" fill="#fff" stroke="#666" stroke-width="3"/>
+  <g stroke="#777" stroke-width="2"><line x1="295" y1="292" x2="304" y2="310"/><line x1="311" y1="282" x2="321" y2="314"/><line x1="329" y1="283" x2="339" y2="311"/></g><line x1="34" y1="306" x2="246" y2="299" stroke="#666" stroke-width="4"/>
+  <text x="190" y="331" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#111"><tspan x="190" dy="0">Гусеничный бульдозер</tspan><tspan x="190" dy="21">разравнивает землю</tspan></text>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#111"><text x="570" y="57" text-anchor="middle" font-size="35" font-weight="800">БУЛЬДОЗЕР</text><text x="570" y="93" text-anchor="middle" font-size="18">Толкает землю широким щитом.</text><text x="570" y="119" text-anchor="middle" font-size="18">Земля становится ровной.</text></g>
+  <g transform="translate(455 145)" stroke="#111" fill="#fff" stroke-linejoin="round"><path d="M0 24 Q115 0 230 24 L215 150 Q115 174 15 150 Z" stroke-width="7"/><path d="M13 83 Q115 120 217 83" stroke-width="4"/><path d="M16 127 Q115 158 214 127" stroke-width="3"/><line x1="39" y1="19" x2="29" y2="152" stroke-width="2"/><line x1="74" y1="10" x2="68" y2="162" stroke-width="2"/><line x1="156" y1="10" x2="162" y2="162" stroke-width="2"/><line x1="191" y1="19" x2="201" y2="152" stroke-width="2"/></g>
+  <text x="570" y="342" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#111">Широкий щит</text>
+</g>
+</svg>
