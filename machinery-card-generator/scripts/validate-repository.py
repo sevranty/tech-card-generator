@@ -2,11 +2,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import subprocess
 import sys
 import tempfile
+import zipfile
 from pathlib import Path
 
 SKILL = Path(__file__).resolve().parents[1]
@@ -42,11 +44,13 @@ def check_markdown_links() -> None:
     broken: list[str] = []
     pattern = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
     for doc in markdown_files:
-        for target in pattern.findall(doc.read_text(encoding="utf-8")):
+        text = doc.read_text(encoding="utf-8")
+        for target in pattern.findall(text):
             target = target.strip().split("#", 1)[0]
             if not target or target.startswith(("http://", "https://", "mailto:", "sandbox:")):
                 continue
-            resolved = (doc.parent / target.replace("%20", " ")).resolve()
+            target = target.replace("%20", " ")
+            resolved = (doc.parent / target).resolve()
             if not resolved.exists():
                 broken.append(f"{doc.relative_to(REPO)} -> {target}")
     if broken:
@@ -80,18 +84,52 @@ def check_runtime_manifest() -> None:
     print("Runtime manifest contract passed")
 
 
+def check_release_artifacts() -> None:
+    dist = REPO / "dist"
+    if not dist.exists():
+        return
+    manifest_path = dist / "release-manifest.json"
+    if not manifest_path.is_file():
+        raise SystemExit("dist exists without release-manifest.json")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    version = manifest.get("version")
+    archive = dist / manifest.get("archive", "")
+    checksum = dist / f"machinery-card-generator-v{version}.sha256"
+    if not archive.is_file() or not checksum.is_file():
+        raise SystemExit("Release archive or checksum is missing")
+    digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+    if digest != manifest.get("archive_sha256"):
+        raise SystemExit("Release archive SHA-256 does not match manifest")
+    if not checksum.read_text(encoding="utf-8").startswith(digest + "  " + archive.name):
+        raise SystemExit("Release checksum file does not match archive")
+    with zipfile.ZipFile(archive) as zf:
+        if zf.testzip():
+            raise SystemExit("Release archive is corrupt")
+        names = zf.namelist()
+    if not names or not all(name.startswith("machinery-card-generator/") for name in names):
+        raise SystemExit("Release archive has invalid root")
+    forbidden = ("/tests/", "/scripts/", "README.md", "CHANGELOG")
+    if any(any(token in name for token in forbidden) for name in names):
+        raise SystemExit("Release archive contains repository-only files")
+    print(f"Release package contract passed: v{version}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the complete tech-card-generator validation gate")
-    parser.add_argument("--skip-runtime", action="store_true", help="Skip deterministic runtime generation; diagnostics only")
+    parser.add_argument("--skip-runtime", action="store_true", help="Skip deterministic runtime generation; intended only for diagnostics")
     args = parser.parse_args()
+
     check_required()
     run([sys.executable, str(SKILL / "scripts/validate-agent-skills-spec.py"), str(SKILL)], "Agent Skills specification")
     run([sys.executable, str(SKILL / "scripts/validate-content.py")], "Skill content")
     check_runtime_manifest()
     check_markdown_links()
+    check_release_artifacts()
+
     if not args.skip_runtime:
         with tempfile.TemporaryDirectory(prefix="tech-card-generator-gate-") as tmp:
             run([sys.executable, str(SKILL / "tests/runtime/run-runtime-validation.py"), "--output-dir", tmp], "Runtime contract harness")
+
     print("\nRepository validation gate passed")
 
 

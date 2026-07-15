@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "skill_name": "machinery-card-generator",
+  "version": "2.1.0",
+  "archive": "machinery-card-generator-v2.1.0.zip",
+  "archive_size": 29031,
+  "archive_sha256": "5159ff71763fed5cbfac44d24ea57c500fbfcccde8ff674abe299fccbc5282d2",
+  "root_directory": "machinery-card-generator/",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "machinery-card-generator/SKILL.md",
+      "size": 15409,
+      "sha256": "62643daaebb67e9007e211d5fff8e650682f719be944e2f803146ebc22d887cd"
+    },
+    {
+      "path": "machinery-card-generator/agents/openai.yaml",
+      "size": 691,
+      "sha256": "07e14f497724002751a369220e9bcdc9b219adde21522ca0bd02a187e5ed178b"
+    },
+    {
+      "path": "machinery-card-generator/examples/child-sketch.md",
+      "size": 1123,
+      "sha256": "cad80793799f271abe67cbedb0d1cd3ec0625a12884f83be5dca33acca9dbed4"
+    },
+    {
+      "path": "machinery-card-generator/examples/toy-bulldozer.md",
+      "size": 1781,
+      "sha256": "ac0d028073552e9857a051e4ce0e93a4cd0bc13305047c45e0fb02bb87ec0783"
+    },
+    {
+      "path": "machinery-card-generator/examples/tracked-bulldozer.md",
+      "size": 5091,
+      "sha256": "ca47ada6bec5f693438edebb50b6de11131a58d17b0f6e7af62727444c73e878"
+    },
+    {
+      "path": "machinery-card-generator/examples/unclear-object.md",
+      "size": 1176,
+      "sha256": "4af963753d7fcafb4ab7d93b2696bd988a891829e8e8045dd48fb38315b16203"
+    },
+    {
+      "path": "machinery-card-generator/references/analysis-rules.md",
+      "size": 20533,
+      "sha256": "13113a2021a7431f31537adcda0835d71d71c813df1836c4c17f8f53c8a82ae4"
+    },
+    {
+      "path": "machinery-card-generator/references/card-layout.md",
+      "size": 9347,
+      "sha256": "e4d9d8174f62008fbdd7a465c680e2a9fa8f6ee6423141a424913162ba85043b"
+    },
+    {
+      "path": "machinery-card-generator/references/output-template.md",
+      "size": 8125,
+      "sha256": "a994717669dad751bacd564d1c27c8f143863942682fe0a6243752e39c23812c"
+    },
+    {
+      "path": "machinery-card-generator/references/quality-check.md",
+      "size": 14695,
+      "sha256": "df3e8b62232fe1ba9d97454410e2369facfe0e46d04d61882eaa5ce44014bc21"
+    },
+    {
+      "path": "machinery-card-generator/references/style-lock.md",
+      "size": 10240,
+      "sha256": "1bfaaafde8cb8d6554ec5e8127c2bbffe2ac23c20476e3f2fc0f49faab2fd751"
+    }
+  ],
+  "excluded_repository_only": [
+    "tests/",
+    "scripts/",
+    "generated evidence",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}
