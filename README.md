@@ -230,12 +230,19 @@ python3 machinery-card-generator/scripts/validate-agent-skills-spec.py machinery
 python3 machinery-card-generator/scripts/validate-content.py
 ```
 
-Ожидаемый результат:
+Обе команды должны завершиться с кодом `0`. Первый валидатор печатает:
 
 ```text
 Agent Skills specification validation passed
-Content validation passed
 ```
+
+Второй валидатор начинает итоговую сводку строкой:
+
+```text
+Проверка содержательных требований пройдена
+```
+
+и дополнительно сообщает количество проверенных обязательных файлов, этапов, полей и сценариев.
 
 Валидаторы проверяют frontmatter, имя папки, обязательные файлы, `agents/openai.yaml`, 21 этап, обязательные поля, ограничения масштаба, разные названия двух блоков, тестовые сценарии и правила видимого прикрепления финального изображения.
 
