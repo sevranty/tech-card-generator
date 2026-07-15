@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+<title id="title">machinery-card-generator project image</title>
+<desc id="desc">Black and white educational machinery card with one tracked bulldozer and a separate blade detail.</desc>
+<rect width="1600" height="800" fill="#fff"/>
+<rect x="80" y="80" width="1440" height="640" rx="28" fill="#fff" stroke="#111" stroke-width="3"/>
+<g font-family="Arial,DejaVu Sans,sans-serif" fill="#111">
+  <text x="130" y="155" font-size="30" font-weight="700">machinery-card-generator</text>
+  <text x="130" y="280" font-size="72" font-weight="800">КАРТОЧКИ</text>
+  <text x="130" y="360" font-size="72" font-weight="800">О ТЕХНИКЕ</text>
+  <text x="130" y="425" font-size="30">Одна реальная машина.</text>
+  <text x="130" y="466" font-size="30">Анализ → генерация → проверка.</text>
+  <g font-size="22" font-weight="700">
+    <rect x="130" y="520" width="160" height="52" rx="26" fill="#fff" stroke="#111" stroke-width="2"/><text x="160" y="554">1 машина</text>
+    <rect x="308" y="520" width="170" height="52" rx="26" fill="#fff" stroke="#111" stroke-width="2"/><text x="338" y="554">4 текста</text>
+    <rect x="130" y="590" width="180" height="52" rx="26" fill="#fff" stroke="#111" stroke-width="2"/><text x="160" y="624">Ч/Б стиль</text>
+    <rect x="328" y="590" width="215" height="52" rx="26" fill="#fff" stroke="#111" stroke-width="2"/><text x="358" y="624">Без брендов</text>
+  </g>
+</g>
+<g transform="translate(690 155)">
+  <rect width="760" height="490" rx="18" fill="#fff" stroke="#111" stroke-width="3"/>
+  <line x1="380" y1="0" x2="380" y2="490" stroke="#111" stroke-width="3"/>
+  <g transform="translate(12 18)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 140 Q80 95 150 135 T300 125 T350 138" stroke="#bbb" stroke-width="2"/>
+    <path d="M8 240 Q90 215 180 238 T350 228" stroke="#aaa" stroke-width="2"/>
+    <path d="M8 335 Q90 310 180 333 T350 325" stroke="#888" stroke-width="3"/>
+    <ellipse cx="190" cy="250" rx="150" ry="115" fill="#fff" stroke="none"/>
+    <rect x="65" y="238" width="235" height="102" rx="50" fill="#fff" stroke="#111" stroke-width="7"/>
+    <rect x="86" y="257" width="194" height="64" rx="31" stroke="#111" stroke-width="4"/>
+    <circle cx="128" cy="289" r="22" fill="#fff" stroke="#111" stroke-width="4"/>
+    <circle cx="190" cy="289" r="22" fill="#fff" stroke="#111" stroke-width="4"/>
+    <circle cx="252" cy="289" r="20" fill="#fff" stroke="#111" stroke-width="4"/>
+    <path d="M118 238 L145 170 L247 170 L278 240 Z" fill="#fff" stroke="#111" stroke-width="6"/>
+    <path d="M155 170 L174 120 L238 120 L255 170 Z" fill="#fff" stroke="#111" stroke-width="6"/>
+    <rect x="178" y="130" width="27" height="31" stroke="#111" stroke-width="3"/>
+    <rect x="212" y="130" width="24" height="31" stroke="#111" stroke-width="3"/>
+    <path d="M265 218 L319 241 M266 267 L321 272" stroke="#111" stroke-width="6"/>
+    <path d="M315 225 Q348 228 353 252 L351 315 Q330 329 303 320 L290 236 Q301 228 315 225Z" fill="#fff" stroke="#111" stroke-width="7"/>
+    <path d="M301 287 Q326 299 350 291 M304 307 Q328 319 351 309" stroke="#111" stroke-width="3"/>
+    <path d="M298 321 Q324 300 354 318 Q365 329 355 344 Q329 351 299 338 Q292 330 298 321Z" fill="#fff" stroke="#777" stroke-width="3"/>
+    <g stroke="#555" stroke-width="2"><path d="M140 181l22 22M158 175l23 23M238 181l22 22M254 193l18 18"/></g>
+  </g>
+  <g font-family="Arial,DejaVu Sans,sans-serif" fill="#111" text-anchor="middle">
+    <text x="190" y="426" font-size="20" font-weight="700">Гусеничный бульдозер</text>
+    <text x="190" y="453" font-size="20" font-weight="700">разравнивает землю</text>
+    <text x="570" y="75" font-size="42" font-weight="800">БУЛЬДОЗЕР</text>
+    <text x="570" y="125" font-size="25">Толкает землю широким щитом.</text>
+    <text x="570" y="160" font-size="25">Земля становится ровной.</text>
+  </g>
+  <g transform="translate(430 215)" fill="none" stroke="#111" stroke-linejoin="round">
+    <path d="M55 25 Q140 0 225 25 L215 115 Q140 140 65 115 Z" fill="#fff" stroke-width="7"/>
+    <path d="M63 67 Q140 97 217 67 M66 100 Q140 127 214 99" stroke-width="4"/>
+    <path d="M85 23L75 116M115 15L108 128M165 15L172 128M195 23L205 116" stroke-width="2"/>
+  </g>
+  <text x="570" y="410" font-family="Arial,DejaVu Sans,sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#111">Широкий щит</text>
+</g>
+</svg>
