@@ -4,7 +4,7 @@
   "dimensions": {
     "project-image.png": [1600, 800],
     "social-preview.png": [1280, 640],
-    "social-preview-evidence.png": [1400, 940]
+    "social-preview-evidence.svg": [1400, 940]
   },
   "files": {
     "project-image.svg": {
@@ -19,9 +19,9 @@
       "size": 29703,
       "sha256": "0464ead6355345c86e7bcc52ed9a829fa03e9b9e9ce9b907c62c51605e8ba496"
     },
-    "social-preview-evidence.png": {
-      "size": 45573,
-      "sha256": "b0ad6328959b11a630ea47621d95565d10c8d05f2a999bd801887c8fc0d014cb"
+    "social-preview-evidence.svg": {
+      "size": 1344,
+      "sha256": "5043315f098c5e28dbff082a40f1f71d042863f8da443ff6b1538c637d5f2669"
     }
   }
 }
