@@ -1,0 +1,38 @@
+skill_name: machinery-card-generator
+cases:
+  - id: real-bulldozer
+    input_type: real_image
+    expected_action: visible_analysis_then_generate_check_attach
+    expected_real_class: "Гусеничный бульдозер с передним отвалом"
+    expected_scene_machine_name: "Гусеничный бульдозер"
+    expected_scene_title: "Гусеничный бульдозер разравнивает землю"
+    expected_right_title: "Бульдозер"
+    expected_child_text: "Бульдозер толкает землю большим щитом. Земля становится ровной."
+    expected_child_element: "Широкий щит"
+    expected_machine_safe_area_percent: "50-60"
+    expected_max_width_percent: 65
+    expected_max_height_percent: 60
+    expected_environment_min_percent: 30
+    action_must_be_readable_without_text: true
+    three_environment_planes_required: true
+    final_image_must_be_attached: true
+    forbidden_child_terms:
+      - "отвал"
+    forbidden_visual_effects:
+      - "серая кайма"
+      - "размытый серый ореол"
+      - "внешнее свечение"
+  - id: toy-construction-machine
+    input_type: toy
+    expected_action: find_one_real_analogue_then_generate
+    expected_real_class: "Гусеничный бульдозер с передним отвалом"
+    must_exclude_source_distortions: true
+  - id: child-sketch
+    input_type: child_sketch
+    expected_action: find_one_real_analogue_then_generate
+    expected_real_class: "Автобетоносмеситель"
+    must_exclude_source_distortions: true
+  - id: unclear-object
+    input_type: unclear
+    expected_action: request_clarification_without_generation
+    generation_must_not_start: true
