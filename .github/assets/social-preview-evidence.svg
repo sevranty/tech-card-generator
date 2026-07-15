@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940">
+  <rect width="1400" height="940" fill="#fff"/>
+  <text x="45" y="55" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" font-weight="700">TCG#8 — проверка project image / social preview</text>
+  <image href="social-preview.png" x="60" y="90" width="1280" height="640"/>
+  <rect x="59" y="89" width="1282" height="642" fill="none" stroke="#111" stroke-width="2"/>
+  <rect x="188" y="154" width="1024" height="512" fill="none" stroke="#c00" stroke-width="3"/>
+  <text x="195" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700" fill="#b00000">safe zone 10%</text>
+  <image href="social-preview.png" x="60" y="770" width="320" height="160"/>
+  <rect x="59" y="769" width="322" height="162" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="420" y="807" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700">Миниатюра 320×160</text>
+  <text x="420" y="850" font-family="DejaVu Sans,Arial,sans-serif" font-size="21">Заголовок, машина и точная структура 2×1 читаются.</text>
+  <text x="420" y="890" font-family="DejaVu Sans,Arial,sans-serif" font-size="21">Сплошной белый фон; PNG меньше 1 МБ.</text>
+</svg>
