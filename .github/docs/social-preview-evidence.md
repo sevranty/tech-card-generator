@@ -7,7 +7,7 @@
 | `project-image.svg` | 6023 bytes | `f83e58815581b8f2265f2c8641a3712bd9dd452c95df760405ebb52cefe36774` |
 | `project-image.png` | 37223 bytes | `2f2660a9d08ef2851f3bd520e2b787499b622d003470a0e240721deea7af8a98` |
 | `social-preview.png` | 29703 bytes | `0464ead6355345c86e7bcc52ed9a829fa03e9b9e9ce9b907c62c51605e8ba496` |
-| `social-preview-evidence.png` | 45573 bytes | `b0ad6328959b11a630ea47621d95565d10c8d05f2a999bd801887c8fc0d014cb` |
+| `social-preview-evidence.svg` | 1344 bytes | `5043315f098c5e28dbff082a40f1f71d042863f8da443ff6b1538c637d5f2669` |
 
 ## Автоматические проверки
 
@@ -17,7 +17,7 @@
 - `social-preview.png` значительно меньше лимита 1 МБ;
 - файлы открываются Pillow без ошибок;
 - фон сплошной белый;
-- master и экспорты зафиксированы в `provenance.json`.
+- master, экспорты и safe-zone preview зафиксированы в `provenance.json`.
 
 ## Ручная визуальная проверка
 
