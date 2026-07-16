@@ -220,7 +220,19 @@ python3 scripts/build-release.py
 - [Agent Skills specification](https://agentskills.io/specification)
 - [Anthropic public Agent Skills repository](https://github.com/anthropics/skills)
 
-Project image и GitHub social preview assets documented in [`docs/project-image-evidence.md`](docs/project-image-evidence.md).
+## WebFactoryOS orchestration
+
+Project identity, ownership and dependency boundaries are fixed in [`docs/webfactoryos-orchestration.md`](docs/webfactoryos-orchestration.md).
+
+WebFactoryOS provides routing, registry placement, naming and task relations. It does not grant cross-repository write access and is not a runtime, build, validation or release dependency.
+
+## Статус проекта
+
+Открытая работа, внешние зависимости и подтверждённые завершённые этапы собраны в [`docs/project-status.md`](docs/project-status.md).
+
+## Project assets
+
+Project image и social preview source assets находятся в [`assets/`](assets/). Размеры, safe zones и evidence описаны в [`docs/project-image-spec.md`](docs/project-image-spec.md) и [`docs/project-image-evidence.md`](docs/project-image-evidence.md).
 
 ## License
 
