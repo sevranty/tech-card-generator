@@ -222,9 +222,13 @@ Project identity, ownership and dependency boundaries are fixed in [`docs/webfac
 
 WebFactoryOS provides routing, registry placement, naming and task relations. It does not grant cross-repository write access and is not a runtime, build, validation or release dependency.
 
-## Дальнейшая упаковка
+## Статус проекта
 
-Project image и GitHub social preview отслеживаются в [TCG#8](https://github.com/sevranty/tech-card-generator/issues/8).
+Открытая работа, внешние зависимости и подтверждённые завершённые этапы собраны в [`docs/project-status.md`](docs/project-status.md).
+
+## Project assets
+
+Project image и social preview source assets находятся в [`assets/`](assets/). Размеры, safe zones и evidence описаны в [`docs/project-image-spec.md`](docs/project-image-spec.md) и [`docs/project-image-evidence.md`](docs/project-image-evidence.md).
 
 ## License
 
