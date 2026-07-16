@@ -158,10 +158,6 @@ tech-card-generator/
     `-- tests/
 ```
 
-## Статус проекта
-
-Остаточный долг, внешние блокеры и проверочные команды ведутся в [`docs/project-status.md`](docs/project-status.md). Этот ledger является единственным местом для статусов TCG#12, TCG#20, WFO#64, WFO#65 и отложенного native runtime smoke.
-
 ## Валидация
 
 Полный локальный gate из корня репозитория:
