@@ -21,7 +21,7 @@ Snapshot for TCG#21 from `main@0fd8b51783b4ca21c1f28c54abada3834d621eaf`.
 | P1 | Register TCG in the WebFactoryOS project registry and add the task relation to TCG#20 | [WFO#64](https://github.com/sevranty/web-factory-os/issues/64) | Open external orchestration task | The relation must keep `grants_write_access=false`; WFO is not a TCG runtime, build, validation or release dependency |
 | P2 | Run a native installed-skill smoke with real image generation | Deferred | Requires an environment with native installed-skill invocation and image generation | Deterministic runtime evidence remains valid in [TCG#10](https://github.com/sevranty/tech-card-generator/issues/10) |
 
-TCG#12 is the only open work item owned by this repository. WFO#64 is tracked in WebFactoryOS and does not block local use, validation or packaging.
+After TCG#21 merges, TCG#12 is the only open work item owned by this repository. WFO#64 is tracked in WebFactoryOS and does not block local use, validation or packaging.
 
 ## Completed work
 
@@ -35,7 +35,7 @@ TCG#12 is the only open work item owned by this repository. WFO#64 is tracked in
 | Reproducible v2.1.0 package | [PR#18](https://github.com/sevranty/tech-card-generator/pull/18) |
 | Project image and social preview source assets | [PR#19](https://github.com/sevranty/tech-card-generator/pull/19) |
 | Local WebFactoryOS ownership and dependency boundary | [PR#22](https://github.com/sevranty/tech-card-generator/pull/22) |
-| Numberless primary-project chat naming contract | [WFO#65 / PR#77](https://github.com/sevranty/web-factory-os/issues/65) |
+| Numberless primary-project chat naming contract | [WFO#65](https://github.com/sevranty/web-factory-os/issues/65) / [PR#77](https://github.com/sevranty/web-factory-os/pull/77) |
 
 Closed duplicate Issues #13, #14 and #15 are not backlog.
 
