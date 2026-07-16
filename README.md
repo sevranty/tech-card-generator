@@ -158,6 +158,10 @@ tech-card-generator/
     `-- tests/
 ```
 
+## Статус проекта
+
+Остаточный долг, внешние блокеры и проверочные команды ведутся в [`docs/project-status.md`](docs/project-status.md). Этот ledger является единственным местом для статусов TCG#12, TCG#20, WFO#64, WFO#65 и отложенного native runtime smoke.
+
 ## Валидация
 
 Полный локальный gate из корня репозитория:
@@ -216,9 +220,7 @@ python3 scripts/build-release.py
 - [Agent Skills specification](https://agentskills.io/specification)
 - [Anthropic public Agent Skills repository](https://github.com/anthropics/skills)
 
-## Дальнейшая упаковка
-
-Project image и GitHub social preview отслеживаются в [TCG#8](https://github.com/sevranty/tech-card-generator/issues/8).
+Project image и GitHub social preview assets documented in [`docs/project-image-evidence.md`](docs/project-image-evidence.md).
 
 ## License
 
