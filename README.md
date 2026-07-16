@@ -216,6 +216,12 @@ python3 scripts/build-release.py
 - [Agent Skills specification](https://agentskills.io/specification)
 - [Anthropic public Agent Skills repository](https://github.com/anthropics/skills)
 
+## WebFactoryOS orchestration
+
+Project identity, ownership and dependency boundaries are fixed in [`docs/webfactoryos-orchestration.md`](docs/webfactoryos-orchestration.md).
+
+WebFactoryOS provides routing, registry placement, naming and task relations. It does not grant cross-repository write access and is not a runtime, build, validation or release dependency.
+
 ## Дальнейшая упаковка
 
 Project image и GitHub social preview отслеживаются в [TCG#8](https://github.com/sevranty/tech-card-generator/issues/8).
