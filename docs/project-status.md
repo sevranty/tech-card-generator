@@ -2,6 +2,8 @@
 
 Snapshot for TCG#21 from `main@9931a210f5cbd695473203116dcaffbe135c43cd`.
 
+Ledger change: [TCG#21](https://github.com/sevranty/tech-card-generator/issues/21) via [PR#23](https://github.com/sevranty/tech-card-generator/pull/23).
+
 ## Identity
 
 | Field | Value |
