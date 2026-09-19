@@ -20,13 +20,14 @@ steps:
       - test -f README.md
       - test -f requirements-validation.txt
       - test -f machinery-card-generator/SKILL.md
-      - test -d machinery-card-generator/tests
+      - test -f machinery-card-generator/tests/runtime/run-runtime-validation.py
       - 'test -z "$(git status --porcelain)"'
 
-  - name: project-tests
+  - name: runtime-validation
     image: python:3.12-alpine
     commands:
+      - apk add --no-cache ttf-dejavu
       - pip install --no-cache-dir -r requirements-validation.txt
-      - python3 -m unittest discover -s machinery-card-generator/tests -p 'test_*.py'
+      - python3 machinery-card-generator/tests/runtime/run-runtime-validation.py
 
 concurrency: 1
