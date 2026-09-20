@@ -1,0 +1,33 @@
+when:
+  - event: pull_request
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+
+# TCG#31: repository-local validation for Tech Card Generator.
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    settings:
+      partial: false
+      depth: 0
+
+steps:
+  - name: repository-integrity
+    image: alpine/git:2.47.2
+    commands:
+      - git diff --check
+      - git fsck --no-progress
+      - test -f README.md
+      - test -f requirements-validation.txt
+      - test -f machinery-card-generator/SKILL.md
+      - test -f machinery-card-generator/tests/runtime/run-runtime-validation.py
+      - 'test -z "$(git status --porcelain)"'
+
+  - name: runtime-validation
+    image: python:3.12-alpine
+    commands:
+      - apk add --no-cache ttf-dejavu
+      - pip install --no-cache-dir -r requirements-validation.txt
+      - python3 machinery-card-generator/tests/runtime/run-runtime-validation.py
+
+concurrency: 1
